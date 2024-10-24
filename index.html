@@ -4,8 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/styles.css">
   <title>Trilha de CSS - DIO</title>
+  <style>
+    .blink {
+      animation: blink-animation 1s steps(5, start) infinite;
+    }
+
+    @keyframes blink-animation {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="banner">
@@ -13,7 +23,7 @@
       <div class="logo">
         <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
       </div>
-      <h1>Trilha de CSS da DIO</h1>
+      <h1>Trilha de CSS da DIO <span class="blink">APRENDA AGORA!</span></h1>
       <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
       <button>Quero me inscrever</button>
     </div>
